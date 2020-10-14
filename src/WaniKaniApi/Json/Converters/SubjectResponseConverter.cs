@@ -29,6 +29,7 @@ namespace WaniKaniApi.Json.Converters
             {
                 case "kanji":
                     var kanji = JsonSerializer.Deserialize<WkResponse<Kanji>>(document.RootElement.GetRawText());
+                    kanji.Data.Id = kanji.Id;
                     return new WkResponse<Subject>()
                     {
                         Data = kanji.Data,
@@ -38,6 +39,7 @@ namespace WaniKaniApi.Json.Converters
                     };
                 case "radical":
                     var radical = JsonSerializer.Deserialize<WkResponse<Radical>>(document.RootElement.GetRawText());
+                    radical.Data.Id = radical.Id;
                     return new WkResponse<Subject>()
                     {
                         Data = radical.Data,
@@ -47,6 +49,7 @@ namespace WaniKaniApi.Json.Converters
                     };
                 case "vocabulary":
                     var vocabulary = JsonSerializer.Deserialize<WkResponse<Vocabulary>>(document.RootElement.GetRawText());
+                    vocabulary.Data.Id = vocabulary.Id;
                     return new WkResponse<Subject>()
                     {
                         Data = vocabulary.Data,

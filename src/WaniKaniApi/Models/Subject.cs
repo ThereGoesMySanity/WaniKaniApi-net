@@ -11,6 +11,8 @@ namespace WaniKaniApi.Models
     {
         public abstract SubjectType Type { get; }
 
+        public int? Id { get; set; }
+
         /// <summary>
         /// Timestamp when the subject was created.
         /// </summary>

@@ -9,6 +9,8 @@ namespace WaniKaniApi.Models.Base
 {
     public class WkResponse<T>
     {
+        [JsonPropertyName("id")]
+        public int? Id { get; set; }
         /// <summary>
         /// The kind of object returned. See the object types section below for all the kinds.
         /// </summary>
