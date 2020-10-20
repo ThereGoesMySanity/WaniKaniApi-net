@@ -48,11 +48,5 @@ namespace WaniKaniApi.Models
         /// </summary>
         [JsonPropertyName("readings")]
         public List<VocabularyReading> Readings { get; set; } = new List<VocabularyReading>();
-
-        /// <summary>
-        /// The subject's reading mnemonic.
-        /// </summary>
-        [JsonPropertyName("reading_mnemonic")]
-        public string ReadingMnemonic { get; set; } = null!;
     }
 }
