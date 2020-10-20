@@ -55,10 +55,34 @@ namespace WaniKaniApi.Models
         public string MeaningMnemonic { get; set; } = null!;
 
         /// <summary>
+        /// The subject's meaning hint.
+        /// </summary>
+        [JsonPropertyName("meaning_hint")]
+        public string MeaningHint { get; set; } = null!;
+
+        /// <summary>
+        /// The subject's reading mnemonic.
+        /// </summary>
+        [JsonPropertyName("reading_mnemonic")]
+        public string ReadingMnemonic { get; set; } = null!;
+
+        /// <summary>
+        /// The subject's reading hint.
+        /// </summary>
+        [JsonPropertyName("reading_hint")]
+        public string ReadingHint { get; set; } = null!;
+
+        /// <summary>
         /// The subject meanings.
         /// </summary>
         [JsonPropertyName("meanings")]
         public List<Meaning> Meanings { get; set; } = new List<Meaning>();
+
+        /// <summary>
+        /// Selected readings for the vocabulary/kanji.
+        /// </summary>
+        [JsonPropertyName("readings")]
+        public List<Reading> Readings { get; set; } = new List<Reading>();
 
         /// <summary>
         /// Collection of auxiliary meanings.

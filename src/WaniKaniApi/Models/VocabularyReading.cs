@@ -7,6 +7,6 @@ using System.Threading.Tasks;
 namespace WaniKaniApi.Models
 {
     public class VocabularyReading : ReadingBase
-    {        
+    {
     }
 }
