@@ -27,4 +27,5 @@ namespace WaniKaniApi.Models
         [JsonPropertyName("accepted_answer")]
         public bool AcceptedAnswer { get; set; }
     }
+    public class Reading : ReadingBase {}
 }
