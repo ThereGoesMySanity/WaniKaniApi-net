@@ -79,12 +79,6 @@ namespace WaniKaniApi.Models
         public List<Meaning> Meanings { get; set; } = new List<Meaning>();
 
         /// <summary>
-        /// Selected readings for the vocabulary/kanji.
-        /// </summary>
-        [JsonPropertyName("readings")]
-        public List<Reading> Readings { get; set; } = new List<Reading>();
-
-        /// <summary>
         /// Collection of auxiliary meanings.
         /// </summary>
         public List<AuxiliaryMeaning> AuxiliaryMeanings { get; set; } = new List<AuxiliaryMeaning>();
