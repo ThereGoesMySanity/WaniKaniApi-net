@@ -42,5 +42,11 @@ namespace WaniKaniApi.Models
         /// </summary>
         [JsonPropertyName("pronunciation_audios")]
         public List<PronunciationAudio> PronunciationAudios { get; set; } = new List<PronunciationAudio>();
+
+        /// <summary>
+        /// Selected readings for the vocabulary.
+        /// </summary>
+        [JsonPropertyName("readings")]
+        public List<VocabularyReading> Readings { get; set; } = new List<VocabularyReading>();
     }
 }
